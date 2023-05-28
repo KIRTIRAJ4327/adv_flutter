@@ -6,7 +6,7 @@ class resultScreen extends StatelessWidget {
   resultScreen({super.key, required this.choosenAnswer});
   final List<String> choosenAnswer;
   List<Map<String, Object>> getSummaryData() {
-    List<Map<String, Object>> summary = [];
+    final List<Map<String, Object>> summary = [];
     for (var i = 0; i < choosenAnswer.length; i++) {
       summary.add({
         'question-index': i,
